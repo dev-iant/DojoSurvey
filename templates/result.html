@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Dojo Survey Index</title>
+</head>
+<body>
+    <form class="boxyboi" action="/">
+        <h2>Submitted Info</h2>
+        <p>Name: {{session['name']}}</p>
+        <p>Dojo Location: {{session['location']}}</p>
+        <p>Favorite Language: {{session['FavLang']}}</p>
+        <p>Comment: {{session['comment']}}</p>
+        <input type="submit">
+    </form>
+</body>
+</html>

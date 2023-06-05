@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Dojo Survey Index</title>
+</head>
+<body>
+    <div class="body">
+        <form class="boxyboi" action="/process" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="location">Dojo Location:</label> 
+                <select name="location" id="location"> 
+                    <option value="Select1">-- Select A Location --</option>
+                    <option value="Chicago">Chicago</option> 
+                    <option value="Seattle">Seattle</option> 
+                    <option value="Online">Online</option> 
+                    <option value="Burbank">Burbank</option> 
+                    <option value="Bellevue">Bellevue</option> 
+                </select><br>
+            <label for="FavLang">Favorite Language</label> 
+                <select name="FavLang" id="FavLang"> 
+                    <option value="Select2">-- Select A Language --</option>
+                    <option value="HTML">HTML</option> 
+                    <option value="CSS">CSS</option> 
+                    <option value="JavaScript">JavaScript</option> 
+                    <option value="Python">Python</option> 
+                    <option value="C#">C#</option> 
+                </select><br>
+            <label for="comment">Comments:</label>
+            <input type="text" id="comment" name="comment"><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
